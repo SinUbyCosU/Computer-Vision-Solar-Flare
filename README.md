@@ -77,9 +77,9 @@ For safety-critical early warning systems, **recall (sensitivity)** matters more
 |-------|----------|-----------|-------|---------|-----|-------|
 | **KNN** | 55.29% | 0.71 | 18.0% | 0.283 | 0.106 | Unbalanced → 80% Acc, 1% Recall (class imbalance failure) |
 | **Random Forest** | 75.07% | 0.82 | 65.0% | 0.703 | 0.502 | Strong trade-off; interpretable features |
-| **Simple CNN** | 73.75% | 0.71 | **80.0%** | **0.752** | 0.475 | ⭐ **Best recall, lightweight (~2k params)** |
+| **Simple CNN** | 73.75% | 0.71 | **80.0%** | **0.752** | 0.475 | **Best recall, lightweight (~2k params)** |
 | **ResNet18** | 73.82% | 0.70 | 79.0% | 0.738 | 0.476 | Comparable to CNN but 5,750× heavier |
-| **SOTA (CNN Ensemble)** [Published] | 75.5% | — | 49.67% | 0.564 | — | ⚠️ Lower recall despite higher accuracy |
+| **SOTA (CNN Ensemble)** [Published] | 75.5% | — | 49.67% | 0.564 | — | Lower recall despite higher accuracy |
 
 **TSS (True Skill Statistic)** = $\frac{TP(TP+FN) - FP(FP+TN)}{(TP+FN)(FP+TN)}$ — accounts for both sensitivity and specificity.
 
@@ -91,7 +91,7 @@ For safety-critical early warning systems, **recall (sensitivity)** matters more
 | **Random Forest** | 79.5% | 8.2% | 0.145 | Poor flare detection |
 | **Simple CNN** | 72.1% | 45.3% | 0.580 | Imbalance hurts deep learning |
 
-⚠️ **Critical observation**: Despite 80% accuracy on unbalanced data, KNN fails catastrophically at detecting flares (1% recall). This demonstrates why **accuracy is a poor metric for imbalanced problems**.
+ **Critical observation**: Despite 80% accuracy on unbalanced data, KNN fails catastrophically at detecting flares (1% recall). This demonstrates why **accuracy is a poor metric for imbalanced problems**.
 
 ---
 
@@ -218,16 +218,16 @@ SOTA ensemble: ██████████████████ 75.5%
 
 #### Flare Recall (Most Critical for Early Warning)
 ```
-Simple CNN:  ████████████████ 80.0%  ⭐
+Simple CNN:  ████████████████ 80.0%  
 ResNet18:    ███████████████ 79.0%
 Random Forest: ████████████ 65.0%
-SOTA ensemble: ██████████ 49.67% ⚠️
+SOTA ensemble: ██████████ 49.67% 
 KNN (balanced): ████ 18.0%
 ```
 
 #### F1-Score
 ```
-Simple CNN:  ████████████████ 0.752 ⭐
+Simple CNN:  ████████████████ 0.752 
 Random Forest: ██████████████ 0.703
 ResNet18:    ████████████ 0.738
 SOTA ensemble: ██████ 0.564
@@ -237,8 +237,8 @@ KNN (balanced): ██ 0.283
 #### Computational Efficiency
 ```
 Inference Time (single image):
-Random Forest: ████████████ 1.2 ms  ⭐
-Simple CNN:    █████ 0.5 ms  ⭐⭐
+Random Forest: ████████████ 1.2 ms  
+Simple CNN:    █████ 0.5 ms  
 KNN:           ██████████████ 12.5 ms
 ResNet18:      ██████████ 2.3 ms
 ```
@@ -299,7 +299,7 @@ solar-flare-detection-sdobenchmark/
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 
@@ -374,7 +374,7 @@ python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f
 
 ---
 
-## 💻 Usage
+##  Usage
 
 ### Option 1: Run Jupyter Notebooks (Interactive)
 
@@ -441,11 +441,9 @@ with torch.no_grad():
 
 ---
 
-## 📄 Report
+##  Report
 
-### Full LaTeX Report
-
-The comprehensive report is available in **`reports/solar-flare-report.tex`** (10+ pages).
+#PDF and Latex report available
 
 **Sections**:
 1. **Abstract** – Executive summary of findings
@@ -473,7 +471,7 @@ xdg-open reports/solar-flare-report.pdf  # Linux
 
 ---
 
-## 📚 References
+##  References
 
 ### Dataset & SOTA
 - [SDOBenchmark Official Repo](https://github.com/i4Ds/SDOBenchmark)
@@ -491,7 +489,7 @@ xdg-open reports/solar-flare-report.pdf  # Linux
 
 ---
 
-## 📜 Citation
+##  Citation
 
 ### If you use this code/results:
 
@@ -520,13 +518,13 @@ xdg-open reports/solar-flare-report.pdf  # Linux
 
 ---
 
-## 📝 License
+##  License
 
 This project is licensed under the **MIT License** – see `LICENSE` file for details.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions welcome! Please:
 
@@ -545,7 +543,7 @@ Contributions welcome! Please:
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 **Q: Why balance the dataset artificially?**  
 A: Class imbalance is a fundamental challenge in solar flare detection. Balancing via undersampling prioritizes recall (detecting all flares) over accuracy. Real-world usage would apply class weights or sampling strategies.
@@ -567,15 +565,15 @@ A: Simple CNN: **0.5 ms**, ResNet18: **2.3 ms**. For a real-time system analyzin
 
 ---
 
-## 📧 Contact
+##  Contact
 
 For questions or discussions:
 - **GitHub Issues**: [Report bug / suggest feature](https://github.com/<your-username>/solar-flare-detection-sdobenchmark/issues)
-- **Email**: your.email@example.com
+- **Email**: tanushree.yadav745@gmail.com
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **SDOBenchmark creators** (FHNW i4Ds) for the dataset
 - **PyTorch & scikit-learn** communities for excellent ML tools
