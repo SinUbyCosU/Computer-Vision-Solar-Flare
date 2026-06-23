@@ -95,7 +95,7 @@ For safety-critical early warning systems, **recall (sensitivity)** matters more
 
 ---
 
-## 📡 Dataset
+##  Dataset
 
 ### SDOBenchmark Specifications
 
