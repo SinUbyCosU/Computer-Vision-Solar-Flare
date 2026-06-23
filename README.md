@@ -69,7 +69,7 @@ For safety-critical early warning systems, **recall (sensitivity)** matters more
 
 ---
 
-## 📊 Results: Comprehensive Comparison
+##  Results: Comprehensive Comparison
 
 ### Balanced SDOBenchmark Test Set (n=1,360)
 
