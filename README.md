@@ -245,7 +245,7 @@ ResNet18:      ██████████ 2.3 ms
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 solar-flare-detection-sdobenchmark/
