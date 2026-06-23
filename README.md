@@ -136,7 +136,7 @@ Class balancing: undersample non-flare
 
 ---
 
-## 🛠️ Methods
+##  Methods
 
 ### 1. K-Nearest Neighbors (KNN)
 
