@@ -25,7 +25,7 @@
 
 ---
 
-## 🌟 Overview
+##  Overview
 
 Solar flares are intense bursts of electromagnetic radiation from the Sun that pose critical threats to:
 - **Satellite infrastructure** (communication, navigation, imaging)
