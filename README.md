@@ -43,7 +43,7 @@ This project systematically evaluates four distinct algorithmic paradigms:
 
 ---
 
-## 🎯 Key Findings
+##  Key Findings
 
 ### 1. **Data Quality > Data Quantity**
 - **Balanced dataset (4,050 samples)** outperforms **unbalanced dataset (8,336 samples)** by:
