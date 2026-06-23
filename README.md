@@ -203,7 +203,7 @@ Modified ResNet18:
 
 ---
 
-## 📈 Detailed Results
+##  Detailed Results
 
 ### Performance Across All Metrics
 
