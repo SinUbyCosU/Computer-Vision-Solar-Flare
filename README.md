@@ -111,7 +111,6 @@ For safety-critical early warning systems, **recall (sensitivity)** matters more
 | **Reference** | http://i4ds.github.io/SDOBenchmark/ |
 
 ### Preprocessing Pipeline
-
 ```
 Raw JPEG (256×256)
     ↓
